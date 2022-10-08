@@ -1,5 +1,5 @@
 import React from 'react'
-import {Link, Outlet} from "react-router-dom"
+// import {Link, Outlet} from "react-router-dom"
 export default function NavBar() {
   return (
     <div>
@@ -9,7 +9,7 @@ export default function NavBar() {
                 <Link to="/home">Home</Link>
             </div> */}
         </div>
-        <Outlet/>
+        {/* <Outlet/> */}
     </div>
   )
 }
