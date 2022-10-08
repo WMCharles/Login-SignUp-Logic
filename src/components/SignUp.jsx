@@ -1,6 +1,7 @@
 import React, { useState} from 'react'
 
 export default function SignUp({handleClick, signUp}) {
+
     const [username, setUserName] = useState("")
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
@@ -8,6 +9,9 @@ export default function SignUp({handleClick, signUp}) {
     function handleSignUp(event){
         event.preventDefault()
         signUp(username, email, password)
+        // alert(`username - ${username} email - ${email} password - ${password}`)
+        // Handleclick sets hasAccount to true and takes us to Login component
+        setTimeout(handleClick, 1000)
     }
 
     return (
