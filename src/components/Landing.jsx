@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function Landing({name = "User"}) {
+export default function Landing({user}) {
   return (
     <div>
-        <h1>Welcome <span>{name}</span></h1>
+        <h1>Welcome <span>{user.user}</span></h1>
     </div>
   )
 }

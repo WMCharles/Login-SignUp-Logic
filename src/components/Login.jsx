@@ -36,7 +36,7 @@ export default function Login({handleClick, title, User}) {
                     <p onClick={handleClick}>Don't have an account?</p>
                 </div>
             </form>
-            <Landing/>
+            <Landing user={User}/>
         </div>
     )
 }
