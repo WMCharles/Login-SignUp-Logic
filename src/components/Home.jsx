@@ -4,7 +4,10 @@ import SignUp from './SignUp'
 
 export default function Home() {
     const [hasAccount, setHasAccount] = useState(true)
-
+    const [user, setUser] = useState("")
+    const [password, setPassword] = useState("")
+    const [confirm, setConfirm] = useState("")
+    
     function handleClick(){
         setHasAccount(!hasAccount)
     }
