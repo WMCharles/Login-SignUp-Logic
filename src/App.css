@@ -19,3 +19,7 @@
   color: rgb(40, 141, 167);
   cursor: pointer;
 }
+
+span {
+  color: red;
+}
