@@ -1,8 +1,10 @@
 import React, { useState } from 'react'
-import Landing from './Landing'
-// import { User as user } from '../User'
+import {useNavigate} from "react-router-dom"
 
 export default function Login({handleClick, title, User}) {
+    // Redirect
+    const navigate = useNavigate()
+
     const email = User.email
     const password = User.password
     const [inputEmail, setInputEmail] = useState("")
@@ -11,12 +13,12 @@ export default function Login({handleClick, title, User}) {
     function handleLogin(event){
         event.preventDefault()
         if(inputEmail === email && inputPassword === password){
-            alert(`Login successful! Welcome ${User.user}`)
+            navigate(`/home`)
         } else {
             alert("Invalid Credentials")
         }
     }
-
+    
     return (
         <div>
             <form onSubmit={handleLogin}>
@@ -36,7 +38,6 @@ export default function Login({handleClick, title, User}) {
                     <p onClick={handleClick}>Don't have an account?</p>
                 </div>
             </form>
-            <Landing user={User}/>
         </div>
     )
 }
