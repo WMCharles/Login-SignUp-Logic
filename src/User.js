@@ -1,7 +1,7 @@
-const User = {
-    name: "Charles",
+const defaultUser = {
+    name: "Admin",
     email: "admin@react.com",
     password: "password"
 }
 
-export {User}
+export {defaultUser}
