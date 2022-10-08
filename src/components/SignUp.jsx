@@ -9,7 +9,7 @@ export default function SignUp({handleClick, signUp}) {
         event.preventDefault()
         signUp(username, email, password)
     }
-    
+
     return (
         <form onSubmit={handleSignUp}>
             <h2>Sign Up</h2>
